@@ -1,0 +1,15 @@
+# SPDX-FileCopyrightText: Trident IoT, LLC <https://www.tridentiot.com>
+# SPDX-License-Identifier: MIT
+---
+version: 2
+
+updates:
+  - package-ecosystem: "cargo"
+    directory: "/"
+    target-branch: "main"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
